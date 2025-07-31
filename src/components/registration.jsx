@@ -11,7 +11,7 @@ const Registration = () =>
     const handleSignup = (e) => {
         e.preventDefault();
 
-        //check if password and confirm password match
+        //check if 'password' and 'confirm password' match
         if(password !== confirmPassword)
         {
             alert("Warning! Passwords do not match!");
@@ -22,7 +22,7 @@ const Registration = () =>
 
     return (
         <div>
-            <h2>Signup</h2>
+            <h2>Register for an Account</h2>
             <form onSubmit={handleSignup}>
                 <input
                     type="text"
@@ -45,7 +45,7 @@ const Registration = () =>
                     onChange = {(e) => setConfirmPassword(e.target.value)}
                     required
                 />
-                <button type="submit">Signup</button>
+                <button type="submit">Register</button>
             </form>
         </div>
     );
